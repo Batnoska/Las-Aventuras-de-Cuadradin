@@ -40,7 +40,13 @@ namespace Game
 
             if (distanceX < sumHalfWidth && distanceY < sumHalfHeight)
             {
-                GameManager.Instance.SetLevel("Victoria");
+                if (Character.coins > 0)
+                {
+                    GameManager.Instance.SetLevel("Victoria");
+                } else
+                {
+                    Console.WriteLine("Te faltan recoger monedas");
+                }
             }
         }
     }

@@ -18,8 +18,8 @@ namespace Game
     {
         public static Character character;
         public static Win victory;
-        private string backgroundImage = "background.jpg";
         public static Coin coin;
+        private string backgroundImage = "background.jpg";
         public Gameplay()
         {
             Initialize();
@@ -33,7 +33,10 @@ namespace Game
             {
                 Program.EnemyList[i].Render();
             }
-            coin.Render();
+            for (int i = 0; i < Program.coinList.Count; i++)
+            {
+                Program.coinList[i].Render();
+            }
             victory.Render();
         }
 
@@ -54,7 +57,10 @@ namespace Game
             {
                 Program.EnemyList[i].Update();
             }
-            coin.Update();
+            for (int i = 0; i < Program.coinList.Count; i++)
+            {
+                Program.coinList[i].Update();
+            }
             victory.Update();
         }
 
@@ -63,10 +69,10 @@ namespace Game
         private void Initialize()
         {
             character = new Character(new Vector2(400, 400), .10f, .10f);
+            Character.coins = 0;
             victory = new Win(new Vector2(935,0), .2f, .2f);
-            coin = new Coin(new Vector2(200, 200), .1f, .1f);
-            Program.EnemyList.Clear();
             Program.CreateEnemies();
+            Program.CreateCoins();
         }
     }
 

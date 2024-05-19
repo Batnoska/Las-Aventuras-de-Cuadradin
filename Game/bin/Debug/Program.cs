@@ -8,8 +8,11 @@ namespace Game
     public class Program
     {
         public static float deltaTime = 0;
-        static public List<Enemy> EnemyList = new List<Enemy>();
         static DateTime lastFrameTime = DateTime.Now;
+
+
+        static public List<Coin> coinList = new List<Coin>();
+        static public List<Enemy> EnemyList = new List<Enemy>();
 
 
         static void Main(string[] args)
@@ -56,10 +59,16 @@ namespace Game
 
         public static void CreateEnemies()
         {
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f));
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f));
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f));
+            EnemyList.Clear();
+            EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f));
+            EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f));
+            EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f));
         }
 
+        public static void CreateCoins()
+        {
+            coinList.Clear();
+            coinList.Add(new Coin(new Vector2(200, 200), .1f, .1f));
+        }
     }
 }

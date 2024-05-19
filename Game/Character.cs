@@ -8,6 +8,7 @@ namespace Game
 {
     public class Character
     {
+        public static int coins = 0;
         private Transform transform;
         public Transform Transform => transform;
         private CharacterController controller;
