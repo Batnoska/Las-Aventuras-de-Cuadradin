@@ -18,6 +18,7 @@ namespace Game
     {
         public static Character character;
         public static Win victory;
+        private string backgroundImage = "background.jpg";
 
         public Gameplay()
         {
@@ -26,6 +27,7 @@ namespace Game
 
         public override void Draw()
         {
+            Engine.Draw(backgroundImage);
             character.Render();
             for (int i = 0; i < Program.EnemyList.Count; i++)
             {

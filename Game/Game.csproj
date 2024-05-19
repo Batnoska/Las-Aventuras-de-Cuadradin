@@ -64,6 +64,9 @@
     <Compile Include="Victory.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="cuadrado.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

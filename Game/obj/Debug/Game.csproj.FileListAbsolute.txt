@@ -68,3 +68,4 @@ E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\mensaje muerte.png
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\you died.jpg
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\texto victoria.png
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\victoria.jpg
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\background.jpg
