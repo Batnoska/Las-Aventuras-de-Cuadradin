@@ -1,0 +1,70 @@
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\bin\Debug\Engine.dll
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\bin\Debug\ship.png
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\bin\Debug\Game.exe
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\bin\Debug\Game.pdb
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\obj\Debug\Game.exe
+P:\SPARDOX\ACADEMICO\UADE Materias\IOO\ProyectoBase\Game\obj\Debug\Game.pdb
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\ship.png
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.exe
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.pdb
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.exe
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.pdb
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Engine.dll
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.cs
+C:\Users\augus\Downloads\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Program.cs
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Engine.dll
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\ship.png
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.cs
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Program.cs
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.exe
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\bin\Debug\Game.pdb
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.csprojAssemblyReference.cache
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.exe
+D:\Paradigmas de Programación\Paradigmas de Programación\ProyectoBase\Game\obj\Debug\Game.pdb
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Engine.dll
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\ship.png
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Game.cs
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Program.cs
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Game.exe.config
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Game.exe
+C:\Users\p703\Desktop\ProyectoBase\Game\bin\Debug\Game.pdb
+C:\Users\p703\Desktop\ProyectoBase\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\p703\Desktop\ProyectoBase\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\p703\Desktop\ProyectoBase\Game\obj\Debug\Game.exe
+C:\Users\p703\Desktop\ProyectoBase\Game\obj\Debug\Game.pdb
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Engine.dll
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\ship.png
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Game.cs
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Program.cs
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Game.exe.config
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Game.exe
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\Game.pdb
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\obj\Debug\Game.exe
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\obj\Debug\Game.pdb
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\cuadrado.png
+C:\Users\alu763\Downloads\ProyectoBase\ProyectoBase\Game\bin\Debug\cuadrado_malo.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\cuadrado.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\cuadrado_malo.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Engine.dll
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\ship.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Game.cs
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Program.cs
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Game.exe.config
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Game.exe
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\Game.pdb
+E:\Descargas\Imposible Game\ProyectoBase\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+E:\Descargas\Imposible Game\ProyectoBase\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+E:\Descargas\Imposible Game\ProyectoBase\Game\obj\Debug\Game.exe
+E:\Descargas\Imposible Game\ProyectoBase\Game\obj\Debug\Game.pdb
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\fondo.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\mensaje menu.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\mensaje muerte.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\you died.jpg
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\texto victoria.png
+E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\victoria.jpg
