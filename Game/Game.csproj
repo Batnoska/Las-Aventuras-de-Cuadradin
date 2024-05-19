@@ -47,8 +47,10 @@
     <Reference Include="System.Windows.Forms.DataVisualization.Design" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animation.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="CharacterController.cs" />
+    <Compile Include="Coin.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="EnemyMovement.cs" />
     <Compile Include="Game.cs">
