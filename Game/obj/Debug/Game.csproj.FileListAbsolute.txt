@@ -69,3 +69,23 @@ E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\you died.jpg
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\texto victoria.png
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\victoria.jpg
 E:\Descargas\Imposible Game\ProyectoBase\Game\bin\Debug\background.jpg
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\background.jpg
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\cuadrado.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\cuadrado_malo.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Engine.dll
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\fondo.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\mensaje menu.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\mensaje muerte.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\ship.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\texto victoria.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\victoria.jpg
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\you died.jpg
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Game.cs
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Program.cs
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Game.exe.config
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Game.exe
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\Game.pdb
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.exe
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.pdb
