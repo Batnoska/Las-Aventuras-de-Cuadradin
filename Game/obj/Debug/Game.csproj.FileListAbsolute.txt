@@ -89,3 +89,7 @@ C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.cspro
 C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
 C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.exe
 C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\obj\Debug\Game.pdb
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\1.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\2.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\3.png
+C:\Users\lazar\Source\Repos\Las-Aventuras-de-Cuadradin\Game\bin\Debug\4.png

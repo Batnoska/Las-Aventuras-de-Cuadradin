@@ -9,6 +9,8 @@ namespace Game
     
     public class Coin
     {
+        protected Animation idle;
+        protected Animation currentAnimation;
         private Transform transform;
         private float x;
         private float y;
@@ -17,14 +19,24 @@ namespace Game
             transform = new Transform(position, new Vector2(90, 90));
             x = scale_x;
             y = scale_y;
+
+            List<Texture> list = new List<Texture>();
+            for (int i = 1; i < 5; i++)
+            {
+                list.Add(Engine.GetTexture($"{i}.png"));
+            }
+            idle = new Animation("idle", list, .25f, true);
+
+            currentAnimation = idle;
         }
         public void Render()
         {
-            Engine.Draw("cuadrado.png", transform.Position.x, transform.Position.y, x, y);
+            Engine.Draw(currentAnimation.CurrentFrame, transform.Position.x, transform.Position.y, x, y);
         }
         public void Update()
         {
             CheckCollisions();
+            currentAnimation.Update();
         }
         private void CheckCollisions()
         {
