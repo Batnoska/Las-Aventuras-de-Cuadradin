@@ -10,8 +10,6 @@ namespace Game
     {
         private float speed = 2.5f;
         private Transform transform;
-        private DateTime timeLastShoot;
-        private float timeBetweenShoots = 1;
 
         public CharacterController(Transform transform)
         {
@@ -22,22 +20,35 @@ namespace Game
         {
             if (Engine.GetKey(Keys.A))
             {
-                transform.Translate(new Vector2(-1, 0), speed);
+                if (transform.Position.x > 0)
+                {
+                    transform.Translate(new Vector2(-1, 0), speed);
+                }
             }
 
             if (Engine.GetKey(Keys.D))
             {
-                transform.Translate(new Vector2(1, 0), speed);
+                if (transform.Position.x < 980)
+                {
+                    transform.Translate(new Vector2(1, 0), speed);
+                }
+
             }
 
             if (Engine.GetKey(Keys.W))
             {
-                transform.Translate(new Vector2(0, -1), speed);
+                if (transform.Position.y > 0)
+                {
+                    transform.Translate(new Vector2(0, -1), speed);
+                }
             }
 
             if (Engine.GetKey(Keys.S))
             {
-                transform.Translate(new Vector2(0, 1), speed);
+                if (transform.Position.y < 725)
+                {
+                    transform.Translate(new Vector2(0, 1), speed);
+                }
             }
         }
     }
