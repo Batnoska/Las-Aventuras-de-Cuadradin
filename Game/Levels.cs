@@ -37,6 +37,10 @@ namespace Game
             {
                 Program.coinList[i].Render();
             }
+            for (int i = 0; i < Program.WallList.Count; i++)
+            {
+                Program.WallList[i].Render();
+            }
             victory.Render();
         }
 
@@ -61,6 +65,10 @@ namespace Game
             {
                 Program.coinList[i].Update();
             }
+            for (int i = 0; i < Program.WallList.Count; i++)
+            {
+                Program.WallList[i].Update();
+            }
             victory.Update();
         }
 
@@ -73,6 +81,7 @@ namespace Game
             victory = new Win(new Vector2(935,0), .2f, .2f);
             Program.CreateEnemies();
             Program.CreateCoins();
+            Program.CreateWall();
         }
     }
 

@@ -13,7 +13,7 @@ namespace Game
 
         static public List<Coin> coinList = new List<Coin>();
         static public List<Enemy> EnemyList = new List<Enemy>();
-
+        static public List<Wall> WallList = new List<Wall>();
 
         static void Main(string[] args)
         {
@@ -69,6 +69,11 @@ namespace Game
         {
             coinList.Clear();
             coinList.Add(new Coin(new Vector2(200, 200), .1f, .1f));
+        }
+         public static void CreateWall()
+        {
+           WallList.Clear();
+            WallList.Add(new Wall(new Vector2(300, 300), .1f, .1f));
         }
     }
 }
