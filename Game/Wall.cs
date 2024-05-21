@@ -47,7 +47,7 @@ namespace Game
             float sumHalfWidth = character.Transform.Scale.x / 2 + transform.Scale.x / 2;
             float sumHalfHeight = character.Transform.Scale.y / 2 + transform.Scale.y / 2;
 
-            
+
         }
     }
 

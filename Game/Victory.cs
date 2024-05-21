@@ -9,14 +9,16 @@ namespace Game
     public class Win
     {
         private Transform transform;
+        private int condition;
         private float x;
         private float y;
 
-        public Win(Vector2 position, float scale_x, float scale_y)
+        public Win(Vector2 position, float scale_x, float scale_y, int condition)
         {
-            transform = new Transform(position, new Vector2(90,90));
+            transform = new Transform(position, new Vector2(90, 90));
             x = scale_x;
             y = scale_y;
+            this.condition = condition;
         }
 
         public void Render()
@@ -40,7 +42,7 @@ namespace Game
 
             if (distanceX < sumHalfWidth && distanceY < sumHalfHeight)
             {
-                if (Character.coins > 0)
+                if (Character.coins >= condition)
                 {
                     GameManager.Instance.SetLevel("Victoria");
                 } else

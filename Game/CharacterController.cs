@@ -28,7 +28,7 @@ namespace Game
 
             if (Engine.GetKey(Keys.D))
             {
-                if (transform.Position.x < 980)
+                if (transform.Position.x < 1557)
                 {
                     transform.Translate(new Vector2(1, 0), speed);
                 }
@@ -45,7 +45,7 @@ namespace Game
 
             if (Engine.GetKey(Keys.S))
             {
-                if (transform.Position.y < 725)
+                if (transform.Position.y < 857)
                 {
                     transform.Translate(new Vector2(0, 1), speed);
                 }

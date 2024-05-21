@@ -8,6 +8,8 @@ namespace Game
     public class Program
     {
         public static float deltaTime = 0;
+        public static int HEIGHT = 900;
+        public static int WIDTH = 1600;
         static DateTime lastFrameTime = DateTime.Now;
 
 
@@ -17,7 +19,7 @@ namespace Game
 
         static void Main(string[] args)
         {
-            Engine.Initialize("Las aventuras de Cuadradin");
+            Engine.Initialize("Las aventuras de Cuadradin", HEIGHT, WIDTH);
             Console.WriteLine(GameManager.Instance.CurrentLevel);
 
             while (true)
@@ -60,9 +62,9 @@ namespace Game
         public static void CreateEnemies()
         {
             EnemyList.Clear();
-            EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f));
-            EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f));
-            EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f));
+            EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f, 4));
+            EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f, 6));
+            EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f, 8));
         }
 
         public static void CreateCoins()

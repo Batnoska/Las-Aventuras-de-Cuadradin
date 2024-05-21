@@ -190,10 +190,8 @@ namespace Game
         [DllImport("Engine.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern bool GetRunning();
 
-        public static void Initialize(string title = "Game", bool fullscreen = false)
+        public static void Initialize(string title = "Game",int height = 768, int width = 1024, bool fullscreen = false)
         {
-            height = 768;
-            width = 1024;
             int res = InitInternal(title, width, height, fullscreen);
             WindowOpened = true;
             Debug("Engine inicializado");

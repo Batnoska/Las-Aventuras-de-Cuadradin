@@ -37,10 +37,10 @@ namespace Game
             {
                 Program.coinList[i].Render();
             }
-            for (int i = 0; i < Program.WallList.Count; i++)
-            {
-                Program.WallList[i].Render();
-            }
+            //for (int i = 0; i < Program.WallList.Count; i++)
+            //{
+            //    Program.WallList[i].Render();
+            //}
             victory.Render();
         }
 
@@ -65,10 +65,10 @@ namespace Game
             {
                 Program.coinList[i].Update();
             }
-            for (int i = 0; i < Program.WallList.Count; i++)
-            {
-                Program.WallList[i].Update();
-            }
+            //for (int i = 0; i < Program.WallList.Count; i++)
+            //{
+            //    Program.WallList[i].Update();
+            //}
             victory.Update();
         }
 
@@ -78,10 +78,10 @@ namespace Game
         {
             character = new Character(new Vector2(400, 400), .10f, .10f);
             Character.coins = 0;
-            victory = new Win(new Vector2(935,0), .2f, .2f);
+            victory = new Win(new Vector2(935,0), .2f, .2f, 1);
             Program.CreateEnemies();
             Program.CreateCoins();
-            Program.CreateWall();
+            //Program.CreateWall();
         }
     }
 
