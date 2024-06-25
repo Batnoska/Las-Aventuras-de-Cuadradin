@@ -59,19 +59,9 @@ namespace Game
             lastFrameTime = DateTime.Now;
         }
 
-        public static void CreateEnemies()
-        {
-            EnemyList.Clear();
-            EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f, 4));
-            EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f, 6));
-            EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f, 8));
-        }
+        
 
-        public static void CreateCoins()
-        {
-            coinList.Clear();
-            coinList.Add(new Coin(new Vector2(200, 200), .1f, .1f));
-        }
+        
          public static void CreateWall()
         {
            WallList.Clear();

@@ -44,14 +44,6 @@ namespace Game
                 if (distanceX < sumHalfWidth && distanceY < sumHalfH) // hay colision
                 {
                     GameManager.Instance.SetLevel("Derrota");
-
-                    //Program.EnemyList.Remove(enemy);
-
-                    //if (Program.EnemyList.Count == 0)
-                    //{
-                    //    GameManager.Instance.CurrentLevel.Reset();
-                    //}
-
                 }
             }
         }

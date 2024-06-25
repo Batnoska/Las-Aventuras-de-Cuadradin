@@ -14,11 +14,11 @@ namespace Game
         private float scale_x;
         private float scale_y;
 
-        
-        public Enemy(Vector2 pos, float x,float y, int speed)
+
+        public Enemy(Vector2 pos, float x, float y, int speed, int direction_x, int direction_y)
         {
             transform = new Transform(pos, new Vector2(50, 50));
-            enemyMovement = new EnemyMovement(transform, speed);
+            enemyMovement = new EnemyMovement(transform, speed, direction_x, direction_y);
             scale_x = x;
             scale_y = y;
         }

@@ -76,19 +76,45 @@ namespace Game
 
         private void Initialize()
         {
-            character = new Character(new Vector2(400, 400), .10f, .10f);
+            character = new Character(new Vector2(200, 800), .10f, .10f);
             Character.coins = 0;
-            victory = new Win(new Vector2(935,0), .2f, .2f, 1);
-            Program.CreateEnemies();
-            Program.CreateCoins();
+            victory = new Win(new Vector2(1420,-50), 1.5f, 1.5f, 2);
+            CreateEnemies();
+            CreateCoins();
             //Program.CreateWall();
+        }
+
+        private void CreateEnemies()
+        {
+            Program.EnemyList.Clear();
+            //movimiento horizontal
+            Program.EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f, 4, 1, 0));
+            Program.EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f, 6, 1, 0));
+            Program.EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f, 8, 1, 0));
+            Program.EnemyList.Add(new Enemy(new Vector2(50, 700), .10f, .10f, 8, 1, 0));
+
+            //movimiento vertical
+            Program.EnemyList.Add(new Enemy(new Vector2(600, 100), .10f, .10f, 6, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(400, 100), .10f, .10f, 10, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(800, 100), .10f, .10f, 12, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(1000, 100), .10f, .10f, 5, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(100, 100), .10f, .10f, 7, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(300, 100), .10f, .10f, 9, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(1200, 100), .10f, .10f, 9, 0, 1));
+            Program.EnemyList.Add(new Enemy(new Vector2(1400, 100), .10f, .10f, 9, 0, 1));
+        }
+
+        public static void CreateCoins()
+        {
+            Program.coinList.Clear();
+            Program.coinList.Add(new Coin(new Vector2(200, 200), .1f, .1f));
+            Program.coinList.Add(new Coin(new Vector2(1100, 600), .1f, .1f));
         }
     }
 
     public class Menu : Levels
     {
-        private string backgroundImage = "fondo.png";
-        private string messageImage = "mensaje menu.png";
+        private string backgroundImage = "inicio.png";
 
 
         public Menu()
@@ -111,7 +137,6 @@ namespace Game
         public override void Draw()
         {
             Engine.Draw(backgroundImage);
-            Engine.Draw(messageImage, 150, 350);
         }
 
         public override void Reset()
@@ -121,8 +146,7 @@ namespace Game
 
     public class Defeat : Levels
     {
-        private string backgroundImage = "you died.jpg";
-        private string messageImage = "mensaje muerte.png";
+        private string backgroundImage = "lose.png";
 
         public Defeat()
         {
@@ -145,7 +169,6 @@ namespace Game
         public override void Draw()
         {
             Engine.Draw(backgroundImage);
-            Engine.Draw(messageImage, 150, 100);
         }
 
         public override void Reset()
@@ -155,8 +178,7 @@ namespace Game
 
     public class Victory : Levels
     {
-        private string backgroundImage = "victoria.jpg";
-        private string messageImage = "texto victoria.png";
+        private string backgroundImage = "win.png";
 
         public Victory()
         {
@@ -178,7 +200,6 @@ namespace Game
         public override void Draw()
         {
             Engine.Draw(backgroundImage);
-            Engine.Draw(messageImage, 0, 200);
         }
 
         public override void Reset()

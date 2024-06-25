@@ -15,7 +15,7 @@ namespace Game
 
         public Win(Vector2 position, float scale_x, float scale_y, int condition)
         {
-            transform = new Transform(position, new Vector2(90, 90));
+            transform = new Transform(position, new Vector2(110, 110));
             x = scale_x;
             y = scale_y;
             this.condition = condition;
@@ -23,7 +23,7 @@ namespace Game
 
         public void Render()
         {
-            Engine.Draw("cuadrado.png", transform.Position.x, transform.Position.y, x, y);
+            Engine.Draw("banderin.png", transform.Position.x, transform.Position.y, x, y);
         }
 
         public void Update()

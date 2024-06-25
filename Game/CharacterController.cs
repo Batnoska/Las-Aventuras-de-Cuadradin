@@ -8,7 +8,7 @@ namespace Game
 {
     public class CharacterController
     {
-        private float speed = 2.5f;
+        private float speed = 2.6f;
         private Transform transform;
 
         public CharacterController(Transform transform)
