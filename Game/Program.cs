@@ -12,7 +12,6 @@ namespace Game
         public static int WIDTH = 1600;
         static DateTime lastFrameTime = DateTime.Now;
 
-
         static public List<Coin> coinList = new List<Coin>();
         static public List<IEnemies> EnemyList = new List<IEnemies>();
         //static public List<Wall> WallList = new List<Wall>();
@@ -52,7 +51,7 @@ namespace Game
             GameManager.Instance.CurrentLevel.Update();
         }
 
-        private static void CalcDeltaTime()
+        public static void CalcDeltaTime()
         {
             TimeSpan deltaSpan = DateTime.Now - lastFrameTime;
             deltaTime = (float)deltaSpan.TotalSeconds;

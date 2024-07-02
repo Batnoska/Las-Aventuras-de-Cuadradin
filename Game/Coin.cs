@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Game
 {
     
-    public class Coin
+    public class Coin : IGrababble
     {
         protected Animation idle;
         protected Animation currentAnimation;
@@ -49,11 +49,16 @@ namespace Game
 
             if (distanceX < sumHalfWidth && distanceY < sumHalfHeight)
             {
-                Program.coinList.Remove(this);
-                Console.WriteLine(Character.coins);
-                Character.coins += 1;
-                Console.WriteLine(Character.coins);
+                Grab();
             }
+        }
+
+        public void Grab()
+        {
+            Program.coinList.Remove(this);
+            Console.WriteLine(Character.coins);
+            Character.coins += 1;
+            Console.WriteLine(Character.coins);
         }
     }
 

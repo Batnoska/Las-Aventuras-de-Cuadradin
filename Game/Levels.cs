@@ -94,14 +94,13 @@ namespace Game
             Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 700), .10f, .10f, 8, 1, 0));
 
             //movimiento vertical
-            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(600, 100), .10f, .10f, 6, 0, 1));
             Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(400, 100), .10f, .10f, 10, 0, 1));
             Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(800, 100), .10f, .10f, 12, 0, 1));
-            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1000, 100), .10f, .10f, 5, 0, 1));
             Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(100, 100), .10f, .10f, 7, 0, 1));
-            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(300, 100), .10f, .10f, 9, 0, 1));
-            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1200, 100), .10f, .10f, 9, 0, 1));
             Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1400, 100), .10f, .10f, 9, 0, 1));
+
+            //cañones
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.canion, new Vector2(600, 650), .7f, .7f, 0,0 ,0));
         }
 
         public static void CreateCoins()

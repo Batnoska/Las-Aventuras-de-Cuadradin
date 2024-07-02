@@ -20,6 +20,8 @@ namespace Game
             {
                 case Enemies.cuadrado:
                     return new Enemy(pos, x, y, speed, direccion_x, direccion_y);
+                case Enemies.canion:
+                    return new Canon(pos, x, y);
             }
             return null;
         }

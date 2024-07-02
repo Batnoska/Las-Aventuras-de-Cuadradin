@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animation.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Canon.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="CharacterController.cs" />
     <Compile Include="Coin.cs" />
@@ -59,10 +61,13 @@
     </Compile>
     <Compile Include="GameManager.cs" />
     <Compile Include="IEnemies.cs" />
+    <Compile Include="IGrababble.cs" />
     <Compile Include="Levels.cs" />
+    <Compile Include="Pool.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="Renderer.cs" />
     <Compile Include="Transform.cs" />
     <Compile Include="Vector2.cs" />
     <Compile Include="Victory.cs" />
@@ -85,6 +90,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="banderin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bullet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="canon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="cuadrado.png">
