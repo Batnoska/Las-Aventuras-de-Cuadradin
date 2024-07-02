@@ -52,11 +52,13 @@
     <Compile Include="CharacterController.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="EnemyFactory.cs" />
     <Compile Include="EnemyMovement.cs" />
     <Compile Include="Game.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="GameManager.cs" />
+    <Compile Include="IEnemies.cs" />
     <Compile Include="Levels.cs" />
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

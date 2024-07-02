@@ -88,20 +88,20 @@ namespace Game
         {
             Program.EnemyList.Clear();
             //movimiento horizontal
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 500), .10f, .10f, 4, 1, 0));
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 300), .10f, .10f, 6, 1, 0));
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 100), .10f, .10f, 8, 1, 0));
-            Program.EnemyList.Add(new Enemy(new Vector2(50, 700), .10f, .10f, 8, 1, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado,new Vector2(50, 500), .10f, .10f, 4, 1, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 300), .10f, .10f, 6, 1, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 100), .10f, .10f, 8, 1, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 700), .10f, .10f, 8, 1, 0));
 
             //movimiento vertical
-            Program.EnemyList.Add(new Enemy(new Vector2(600, 100), .10f, .10f, 6, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(400, 100), .10f, .10f, 10, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(800, 100), .10f, .10f, 12, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(1000, 100), .10f, .10f, 5, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(100, 100), .10f, .10f, 7, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(300, 100), .10f, .10f, 9, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(1200, 100), .10f, .10f, 9, 0, 1));
-            Program.EnemyList.Add(new Enemy(new Vector2(1400, 100), .10f, .10f, 9, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(600, 100), .10f, .10f, 6, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(400, 100), .10f, .10f, 10, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(800, 100), .10f, .10f, 12, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1000, 100), .10f, .10f, 5, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(100, 100), .10f, .10f, 7, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(300, 100), .10f, .10f, 9, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1200, 100), .10f, .10f, 9, 0, 1));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(1400, 100), .10f, .10f, 9, 0, 1));
         }
 
         public static void CreateCoins()

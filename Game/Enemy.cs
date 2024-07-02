@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    public class Enemy
+    public class Enemy : IEnemies
     {
         private Transform transform;
         public Transform Transform => transform;
@@ -21,6 +21,11 @@ namespace Game
             enemyMovement = new EnemyMovement(transform, speed, direction_x, direction_y);
             scale_x = x;
             scale_y = y;
+        }
+
+        public Transform GetTransform()
+        {
+            return Transform;
         }
 
         public void Render()
