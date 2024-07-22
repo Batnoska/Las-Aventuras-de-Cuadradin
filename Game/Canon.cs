@@ -18,7 +18,7 @@ namespace Game
         private int speed;
 
         private float timer;
-        private float timeBetweenShots = 2f;
+        private float timeBetweenShots = 1f;
 
         public Canon(Vector2 position, float scale_x, float scale_y, int bulletSpeed) 
         {
@@ -58,7 +58,6 @@ namespace Game
 
         public void Shoot()
         {
-            Engine.Debug("hola");
             Bullet bullet = bullets.Pull();
 
             if (bullet == null)
@@ -69,9 +68,8 @@ namespace Game
             }
             else
             {
-                bullet.Transform.Position = new Vector2(transform.Position.x, transform.Position.y);
+                bullet.transform.position = new Vector2(transform.Position.x, 700);
             }
-
         }
     }
     

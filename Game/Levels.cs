@@ -83,6 +83,7 @@ namespace Game
             character.OnDeath += character.Death;
             character.coins = 0;
             victory = new Win(new Vector2(1420,-50), 1.5f, 1.5f, 2);
+            Program.previousLevel = "Jugar";
             CreateEnemies();
             CreateCoins();
         }
@@ -176,7 +177,9 @@ namespace Game
         {
             character = new Character(new Vector2(100, 450), .10f, .10f);
             character.coins = 0;
+            character.OnDeath += character.Death;
             victory = new Win(new Vector2(1420, 700), 1.5f, 1.5f, 6);
+            Program.previousLevel = "Nivel 2";
             CreateEnemies();
             CreateCoins();
         }
@@ -251,7 +254,7 @@ namespace Game
         {
             if (Engine.GetKey(Keys.SPACE))
             {
-                GameManager.Instance.SetLevel("Jugar");
+                GameManager.Instance.SetLevel(Program.previousLevel);
             }
         }
 

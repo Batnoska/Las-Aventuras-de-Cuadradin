@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{36839803-7ADC-4A78-9141-3B6E0727BFEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,14 @@ Global
 		{4B96137A-5E6A-434B-BBF0-8B3C9342750C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4B96137A-5E6A-434B-BBF0-8B3C9342750C}.Release|Win32.ActiveCfg = Release|Any CPU
 		{4B96137A-5E6A-434B-BBF0-8B3C9342750C}.Release|Win32.Build.0 = Release|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Debug|Win32.Build.0 = Debug|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C7C6E5DB-614E-4F56-9C9A-349DDCA581C8}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

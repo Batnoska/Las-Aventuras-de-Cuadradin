@@ -11,6 +11,7 @@ namespace Game
         public static int HEIGHT = 900;
         public static int WIDTH = 1600;
         static DateTime lastFrameTime = DateTime.Now;
+        static public string previousLevel;
 
         static public List<Coin> coinList = new List<Coin>();
         static public List<IEnemies> EnemyList = new List<IEnemies>();

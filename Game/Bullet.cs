@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace Game
 {
     public class Bullet : IEnemies
     {
-        private Transform transform;
+        public Transform transform;
         public Action<Bullet> OnDestroy;
         public Transform Transform => transform;
         private Collider collider = new Collider();
@@ -31,7 +32,9 @@ namespace Game
         {
             if (transform.Position.x < 0 || transform.Position.x > 1557 || transform.Position.y < 0 || transform.Position.y > 860)
             {
-                OnDestroy?.Invoke(this);
+                
+                    OnDestroy?.Invoke(this);
+                
             }
             transform.Translate(direction, velocidad);
             CheckCollisions();

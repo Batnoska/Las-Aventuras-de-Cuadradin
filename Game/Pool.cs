@@ -28,7 +28,6 @@ namespace MyGame
             {
                 inUse.Add(avaible[0]);
                 avaible.RemoveAt(0);
-                Engine.Debug(avaible.Count.ToString());
                 return inUse[inUse.Count - 1];
             }
         }

@@ -8,7 +8,7 @@ namespace Game
 {
     public class Transform
     {
-        private Vector2 position;
+        public Vector2 position;
         public Vector2 Scale;
         public Vector2 Position
         {

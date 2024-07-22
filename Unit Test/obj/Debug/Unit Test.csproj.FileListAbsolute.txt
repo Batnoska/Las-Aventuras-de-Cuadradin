@@ -1,0 +1,2 @@
+C:\Users\batno\Downloads\Cuadradin\Unit Test\obj\Debug\Unit Test.csproj.AssemblyReference.cache
+C:\Users\batno\Downloads\Cuadradin\Unit Test\obj\Debug\Unit Test.csproj.CoreCompileInputs.cache
