@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Game
 {
-    public class Win
+    public class Win : IVictory
     {
         private Transform transform;
+        private Collider collider = new Collider();
         private int condition;
+        Character character;
         private float x;
         private float y;
 
@@ -33,23 +37,46 @@ namespace Game
 
         private void CheckCollisions()
         {
-            Character character = Gameplay.character;
-            float distanceX = Math.Abs((character.Transform.Position.x + (character.Transform.Scale.x / 2)) - (transform.Position.x + (transform.Scale.x / 2)));
-            float distanceY = Math.Abs((character.Transform.Position.y + (character.Transform.Scale.y / 2)) - (transform.Position.y + (transform.Scale.y / 2)));
-
-            float sumHalfWidth = character.Transform.Scale.x / 2 + transform.Scale.x / 2;
-            float sumHalfHeight = character.Transform.Scale.y / 2 + transform.Scale.y / 2;
-
-            if (distanceX < sumHalfWidth && distanceY < sumHalfHeight)
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Gameplay")
             {
-                if (Character.coins >= condition)
+                character = Gameplay.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
                 {
-                    GameManager.Instance.SetLevel("Victoria");
-                } else
-                {
-                    Console.WriteLine("Te faltan recoger monedas");
+                    if (character.coins >= condition)
+                    {
+                        NextLevel();
+                    } else
+                    {
+                        Console.WriteLine("Te faltan monedas");
+                    }
                 }
             }
+
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Level2")
+            {
+                character = Level2.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    if (character.coins >= condition)
+                    {
+                        Winn();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Te faltan monedas");
+                    }
+                }
+            }
+        }
+
+        public void Winn()
+        {
+            GameManager.Instance.SetLevel("Victoria");
+        }
+
+        public void NextLevel()
+        {
+            GameManager.Instance.SetLevel("Nivel 2");
         }
     }
     

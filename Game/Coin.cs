@@ -12,8 +12,10 @@ namespace Game
         protected Animation idle;
         protected Animation currentAnimation;
         private Transform transform;
+        private Collider collider = new Collider();
         private float x;
         private float y;
+        private Character character;
         public Coin(Vector2 position, float scale_x, float scale_y)
         {
             transform = new Transform(position, new Vector2(90, 90));
@@ -40,25 +42,32 @@ namespace Game
         }
         private void CheckCollisions()
         {
-            Character character = Gameplay.character;
-            float distanceX = Math.Abs((character.Transform.Position.x + (character.Transform.Scale.x / 2)) - (transform.Position.x + (transform.Scale.x / 2)));
-            float distanceY = Math.Abs((character.Transform.Position.y + (character.Transform.Scale.y / 2)) - (transform.Position.y + (transform.Scale.y / 2)));
 
-            float sumHalfWidth = character.Transform.Scale.x / 2 + transform.Scale.x / 2;
-            float sumHalfHeight = character.Transform.Scale.y / 2 + transform.Scale.y / 2;
-
-            if (distanceX < sumHalfWidth && distanceY < sumHalfHeight)
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Gameplay")
             {
-                Grab();
+                character = Gameplay.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    Grab();
+                }
+            }
+
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Level2")
+            {
+                character = Level2.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    Grab();
+                }
             }
         }
 
         public void Grab()
         {
             Program.coinList.Remove(this);
-            Console.WriteLine(Character.coins);
-            Character.coins += 1;
-            Console.WriteLine(Character.coins);
+            Console.WriteLine(character.coins);
+            character.coins += 1;
+            Console.WriteLine(character.coins);
         }
     }
 

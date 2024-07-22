@@ -8,10 +8,12 @@ namespace Game
 {
     public class Character
     {
-        public static int coins = 0;
+        public int coins = 0;
         private Transform transform;
         public Transform Transform => transform;
+        private Collider collider = new Collider();
         private CharacterController controller;
+        public Action<Character> OnDeath;
         private float x;
         private float y;
 
@@ -35,15 +37,9 @@ namespace Game
             for (int i = 0; i < Program.EnemyList.Count; i++)
             {
                 IEnemies enemy = Program.EnemyList[i];
-                float distanceX = Math.Abs((enemy.GetTransform().Position.x + (enemy.GetTransform().Scale.x / 2)) - (transform.Position.x + (transform.Scale.x / 2)));
-                float distanceY = Math.Abs((enemy.GetTransform().Position.y + (enemy.GetTransform().Scale.y / 2)) - (transform.Position.y + (transform.Scale.y / 2)));
-
-                float sumHalfWidth = enemy.GetTransform().Scale.x / 2 + transform.Scale.x / 2;
-                float sumHalfH = enemy.GetTransform().Scale.y / 2 + transform.Scale.y / 2;
-
-                if (distanceX < sumHalfWidth && distanceY < sumHalfH) // hay colision
+                if (collider.CheckCollisions(enemy.GetTransform(), this.transform))
                 {
-                    GameManager.Instance.SetLevel("Derrota");
+                    OnDeath?.Invoke(this);
                 }
             }
         }
@@ -52,6 +48,11 @@ namespace Game
         {
             controller.GetInputs();
             CheckCollisions();
+        }
+
+        public void Death(Character character)
+        {
+            GameManager.Instance.SetLevel("Derrota");
         }
     }
 }

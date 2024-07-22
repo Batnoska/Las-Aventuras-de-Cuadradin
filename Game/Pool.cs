@@ -10,24 +10,25 @@ namespace MyGame
 {
     public class Pool<T>
     {
+        public List<T> avaible;
         public List<T> inUse;
         public Pool()
         {
-            inUse = new List<T>();
+            avaible = new List<T>();
             inUse = new List<T>();
         }
 
         public T Pull()
         {
-            if (inUse.Count == 0)
+            if (avaible.Count == 0)
             {
                 return default(T);
             }
             else
             {
-                inUse.Add(inUse[0]);
-                inUse.RemoveAt(0);
-                Engine.Debug(inUse.Count.ToString());
+                inUse.Add(avaible[0]);
+                avaible.RemoveAt(0);
+                Engine.Debug(avaible.Count.ToString());
                 return inUse[inUse.Count - 1];
             }
         }
@@ -40,7 +41,7 @@ namespace MyGame
         public void Return(T obj)
         {
             inUse.Remove(obj);
-            inUse.Add(obj);
+            avaible.Add(obj);
         }
     }
 }

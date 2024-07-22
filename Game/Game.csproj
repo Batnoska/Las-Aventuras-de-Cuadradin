@@ -53,6 +53,7 @@
     <Compile Include="Character.cs" />
     <Compile Include="CharacterController.cs" />
     <Compile Include="Coin.cs" />
+    <Compile Include="Collider.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="EnemyFactory.cs" />
     <Compile Include="EnemyMovement.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="GameManager.cs" />
     <Compile Include="IEnemies.cs" />
     <Compile Include="IGrababble.cs" />
+    <Compile Include="IVictory.cs" />
     <Compile Include="Levels.cs" />
     <Compile Include="Pool.cs" />
     <Compile Include="Program.cs">

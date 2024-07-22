@@ -15,15 +15,17 @@ namespace Game
         public Transform Transform => transform;
         private float x;
         private float y;
+        private int speed;
 
         private float timer;
-        private float timeBetweenShots = 1f;
+        private float timeBetweenShots = 2f;
 
-        public Canon(Vector2 position, float scale_x, float scale_y) 
+        public Canon(Vector2 position, float scale_x, float scale_y, int bulletSpeed) 
         {
             transform = new Transform(position, new Vector2(50, 50));
             x = scale_x;
             y = scale_y;
+            speed = bulletSpeed;
         }
 
         public void Update()
@@ -61,7 +63,7 @@ namespace Game
 
             if (bullet == null)
             {
-                bullet = new Bullet(transform.Position, transform.Scale.x, transform.Scale.y, 1, 0, -1);
+                bullet = new Bullet(transform.Position, 1, 1, speed, 0, -1);
                 bullet.OnDestroy += bullets.Return;
                 bullets.Push(bullet);
             }
