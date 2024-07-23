@@ -66,6 +66,15 @@ namespace Game
                 }
             }
 
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Level3")
+            {
+                character = Level3.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    character.OnDeath?.Invoke(character);
+                }
+            }
+
         }
 
         public void Render()

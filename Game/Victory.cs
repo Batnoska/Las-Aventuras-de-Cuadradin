@@ -59,6 +59,22 @@ namespace Game
                 {
                     if (character.coins >= condition)
                     {
+                        LastLevel();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Te faltan monedas");
+                    }
+                }
+            }
+
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Level3")
+            {
+                character = Level3.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    if (character.coins >= condition)
+                    {
                         Winn();
                     }
                     else
@@ -77,6 +93,11 @@ namespace Game
         public void NextLevel()
         {
             GameManager.Instance.SetLevel("Nivel 2");
+        }
+
+        public void LastLevel()
+        {
+            GameManager.Instance.SetLevel("Nivel 3");
         }
     }
     

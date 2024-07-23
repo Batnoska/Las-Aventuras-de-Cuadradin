@@ -60,6 +60,15 @@ namespace Game
                     Grab();
                 }
             }
+
+            if (GameManager.Instance.CurrentLevel.ToString() == "Game.Level3")
+            {
+                character = Level3.character;
+                if (collider.CheckCollisions(character.Transform, this.transform))
+                {
+                    Grab();
+                }
+            }
         }
 
         public void Grab()

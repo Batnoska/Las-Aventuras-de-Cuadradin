@@ -31,6 +31,7 @@ namespace Game
             AddNewLevel("Menu", new Menu());
             AddNewLevel("Jugar", new Gameplay());
             AddNewLevel("Nivel 2", new Level2());
+            AddNewLevel("Nivel 3", new Level3());
             AddNewLevel("Derrota", new Defeat());
             AddNewLevel("Victoria", new Victory());
 

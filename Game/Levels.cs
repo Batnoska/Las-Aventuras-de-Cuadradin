@@ -147,7 +147,10 @@ namespace Game
 
         public override void Input()
         {
-
+            if (Engine.GetKey(Keys.J))
+            {
+                GameManager.Instance.SetLevel("Nivel 3");
+            }
         }
 
         public override void Reset()
@@ -206,6 +209,100 @@ namespace Game
             Program.coinList.Add(new Coin(new Vector2(900, 200), .1f, .1f));
             Program.coinList.Add(new Coin(new Vector2(1100, 250), .1f, .1f));
             Program.coinList.Add(new Coin(new Vector2(1300, 350), .1f, .1f));
+        }
+    }
+
+    public class Level3 : Levels
+    {
+        public static Character character;
+        public static Win victory;
+        public static Coin coin;
+        private string backgroundImage = "background.jpg";
+        public Level3()
+        {
+            Initialize();
+        }
+
+        public override void Draw()
+        {
+            Engine.Draw(backgroundImage);
+            character.Render();
+            for (int i = 0; i < Program.EnemyList.Count; i++)
+            {
+                Program.EnemyList[i].Render();
+            }
+            for (int i = 0; i < Program.coinList.Count; i++)
+            {
+                Program.coinList[i].Render();
+            }
+            //for (int i = 0; i < Program.WallList.Count; i++)
+            //{
+            //    Program.WallList[i].Render();
+            //}
+            victory.Render();
+        }
+
+        public override void Input()
+        {
+
+        }
+
+        public override void Reset()
+        {
+            Initialize();
+        }
+
+        public override void Update()
+        {
+            character.Update();
+            for (int i = 0; i < Program.EnemyList.Count; i++)
+            {
+                Program.EnemyList[i].Update();
+            }
+            for (int i = 0; i < Program.coinList.Count; i++)
+            {
+                Program.coinList[i].Update();
+            }
+            //for (int i = 0; i < Program.WallList.Count; i++)
+            //{
+            //    Program.WallList[i].Update();
+            //}
+            victory.Update();
+        }
+
+        private void Initialize()
+        {
+            character = new Character(new Vector2(100, 750), .10f, .10f);
+            character.coins = 0;
+            character.OnDeath += character.Death;
+            victory = new Win(new Vector2(1420, 600), 1.5f, 1.5f, 4);
+            Program.previousLevel = "Nivel 3";
+            CreateEnemies();
+            CreateCoins();
+        }
+
+        private void CreateEnemies()
+        {
+            Program.EnemyList.Clear();
+
+            //cuadrados
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 600), .10f, .10f, 4, 1, 0, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 400), .10f, .10f, 6, 1, 0, 0));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.cuadrado, new Vector2(50, 250), .10f, .10f, 8, 1, 0, 0));
+
+            //cañones
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.canion, new Vector2(350, 780), 2, 2, 0, 0, 0, 10));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.canion, new Vector2(700, 780), 2, 2, 0, 0, 0, 15));
+            Program.EnemyList.Add(EnemyFactory.CreateEnemies(EnemyFactory.Enemies.canion, new Vector2(1300, 780), 2, 2, 0, 0, 0, 20));
+        }
+
+        public static void CreateCoins()
+        {
+            Program.coinList.Clear();
+            Program.coinList.Add(new Coin(new Vector2(200, 300), .1f, .1f));
+            Program.coinList.Add(new Coin(new Vector2(400, 500), .1f, .1f));
+            Program.coinList.Add(new Coin(new Vector2(800, 200), .1f, .1f));
+            Program.coinList.Add(new Coin(new Vector2(1200, 350), .1f, .1f));
         }
     }
 
