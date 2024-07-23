@@ -31,5 +31,24 @@ namespace UnitTest
 
             Assert.IsTrue(collider.CheckCollisions(cuadradin, cuadradoMalo), "La colision deberia devolver true ya que estan en contacto");
         }
+
+        [TestMethod]
+        public void ContadorMoneda()
+        {
+            Collider collider = new Collider();
+            float resultadoEsperado = 1;
+
+            Character character = new Character(new Vector2(300, 300), 1, 1);
+            Transform coin = new Transform(new Vector2(300, 300), new Vector2(.5f, .5f));
+
+            if (collider.CheckCollisions(character.Transform, coin))
+            {
+                character.coins += 1;
+            }
+
+            float resultado = character.coins;
+
+            Assert.AreEqual(resultado, resultadoEsperado);
+        }
     }
 }
